@@ -100,7 +100,7 @@ export default function Pages() {
 
                             <button
 
-                                className='text-xl font-semibold border-l-2 border-black group'
+                                className='text-lg font-semibold border-l-2 border-black group'
                             >
                                 <a
                                     target="_blank"
