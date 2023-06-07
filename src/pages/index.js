@@ -27,10 +27,10 @@ export default function Home() {
 
     <div className='flex flex-col w-full lg:py-24 lg:p-[12%] max-lg:p-20 max-md:p-12 max-sm:p-4 overflow-hidden'>
 
-
+      <motion.img initial={{ opacity: 0 }} transition={{ duration: 2 }} animate={{ opacity: 0.15 }} className='select-none absolute right-0 top-0 z-0 w-[2000px] h-[500px] overflow-hidden' src='/images/bg-hero2-removebg-preview.png' />
       <section className='h-screen relative'>
 
-        <motion.img initial={{ opacity: 0 }} transition={{ duration: 2 }} animate={{ opacity: 0.1 }} className='select-none absolute right-0 top-0 z-0 w-[2000px] h-[500px] overflow-hidden' src='/images/bg-hero2-removebg-preview.png' />
+
 
         <motion.div initial={{ x: -600, opacity: 0 }} transition={{ duration: 1 }} animate={{ x: 0, opacity: 1 }} className='z-10'>
           <h1 className='text-9xl font-bold text-black flex items-center max-lg:text-6xl max-md:text-4xl'>
@@ -40,12 +40,15 @@ export default function Home() {
 
         <div className='w-full flex max-md:flex-col items-center justify-between my-[10%]'>
 
-          <motion.div className='h-0 border border-black' initial={{ width: 0, opacity: 0 }} transition={{ duration: 2 }} animate={{ width: 500, opacity: 1 }} />
+          <motion.div className='h-0 border border-black' initial={{ width: 0, opacity: 0 }} transition={{ duration: 2 }} animate={{ width: '40%', opacity: 1 }} />
           {wordList.map((word, index) => (
-          <motion.h1 key={index} initial={{ y: 100, opacity: 0 }} transition={{ duration: 1 }} animate={{ y: 0, opacity: 1 }} className='word top-[30%] right-20 text-8xl font-semibold max-md:text-6xl'>{word}</motion.h1>
+            <motion.h1 key={index} initial={{ y: 100, opacity: 0 }} transition={{ duration: 1 }} animate={{ y: 0, opacity: 1 }} className='word top-[30%] right-0 text-8xl font-semibold max-md:text-6xl max-sm:text-5xl max-md:right-auto'>{word}</motion.h1>
           ))}
         </div>
-        <SocialBar />
+
+        <div className='max-md:mt-3 z-50'>
+          <SocialBar />
+        </div>
 
       </section>
 
@@ -62,7 +65,7 @@ export default function Home() {
               I&apos;m Pedro, a web developer based in Brasilia/Brazil and specialised in front-end web development. However I am interested in learning and specializing in back-end as well. I am always open to learning new technologies, as I feel very accomplished in the area.
             </p>
             <div className='relative p-10 group'>
-              <motion.img className='h-[400px] rounded-lg group-hover:contrast-75 duration-300' src='/images/Pedro-Xyrlan-foto-removebg-preview.png' />
+              <motion.img className='h-[400px] max-md:h-[300px] rounded-lg group-hover:contrast-75 duration-300' src='/images/Pedro-Xyrlan-foto-removebg-preview.png' />
               <motion.div className='absolute w-full h-full top-0 left-0 duration-700 to-slate-100 from-transparent bg-gradient-radial to-55% ' />
             </div>
           </motion.div>
