@@ -46,7 +46,6 @@ export default function Navbar() {
                 </ul>
             )}
 
-
             <motion.ul className={`flex items-center justify-between gap-8 max-sm:hidden`}>
 
                 <motion.li initial={{ y: 300, opacity: 0 }} transition={{ duration: 0.2 }}>
