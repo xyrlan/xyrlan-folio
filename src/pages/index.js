@@ -89,7 +89,7 @@ export default function Home() {
             </div>
 
             <p className='w-[50%] max-md:w-full text-xl font text-center'>
-              I am experienced in using a wide range of modern technologies, including React JS, CSS, Tailwind CSS, HTML, Framer Motion, Node.js, TS and JS to build astonishing websites that look great in all devices.
+              I am experienced in using a wide range of modern technologies, including React JS, CSS, Tailwind CSS, HTML, Framer Motion, Node.js, TS and Git to build astonishing websites that look great in all devices.
             </p>
           </motion.div>
 

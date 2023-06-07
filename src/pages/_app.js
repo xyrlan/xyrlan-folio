@@ -7,6 +7,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>xyrlan</title>
+        <link rel="icon" href="/images/flor-da-vida.svg" type="image/x-icon"></link>
       </Head>
       <main
         className={`min-h-screen bg-slate-100`}

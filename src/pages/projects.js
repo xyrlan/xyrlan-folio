@@ -9,18 +9,18 @@ export default function Projects() {
 
     const router = useRouter()
     return (
-        <div className='flex max-lg:flex-col justify-between items-center w-full lg:py-24 lg:pr-24 max-lg:p-20 max-md:p-12 relative overflow-hidden'>
+        <div className='flex max-lg:flex-col justify-between items-center w-full lg:py-12 lg:pr-12 max-lg:p-12 max-md:p-12 relative overflow-hidden'>
             <motion.img initial={{ opacity: 0 }} transition={{ duration: 2 }} animate={{ opacity: 0.1 }} className='absolute top-0 left-[30%] -rotate-90  scale-150 z-0 overflow-hidden max-w-full select-none' src='/images/bg-hero3-removebg-preview.png' />
             <motion.div initial={{ x: -600, opacity: 0 }} transition={{ duration: 1 }} animate={{ x: 0, opacity: 1 }} className=''>
                 <h1 className='text-9xl font-bold text-black flex items-center max-lg:text-6xl max-md:text-4xl'>
                     <span className='bg-black text-slate-100 py-4 px-2 pl-24 w-fit z-10'>FRONT</span><motion.span initial={{ x: -300 }} animate={{ x: 0 }} transition={{ duration: 2 }} className=' z-0'>END</motion.span>
                 </h1>
                 <div className='md:pl-24 max-md:pl-12'>
-                    <p className='text-3xl max-md:text-xl text-black mt-[10%] line'>
+                    <p className='text-3xl max-md:text-xl text-black mt-[10%] line max-sm:text-center'>
                         <span className='leading-loose'>Compilation of<br /></span>
                         <a className='cursor-pointer font-semibold text-black underline underline-offset-4' target="_blank" href="https://www.frontendmentor.io">frontendmentor.io</a> challenges
                     </p>
-                    <p className='text-3xl max-md:text-xl text-black my-[3%] max-lg:pb-8'>
+                    <p className='text-3xl max-md:text-xl text-black my-[3%] max-lg:pb-8 max-sm:text-center'>
                         coded by <motion.a className='cursor-pointer font-semibold text-black underline underline-offset-4' target='_blank' href='https://github.com/xyrlan'>xyrlan</motion.a>
                     </p>
                     <div className='pt-10'>
