@@ -59,7 +59,7 @@ export default function Home() {
         <div className='max-md:pb-10'>
           <motion.div initial={{ opacity: 0 }} transition={{ duration: 2 }} whileInView={{ opacity: 1 }} className='flex max-md:flex-col max-md:mt-10 items-center justify-between'>
             <p className='w-[50%] max-md:w-full text-xl font text-center'>
-              I'm Pedro, a web developer based in Brasilia/Brazil and specialised in front-end web development. However I am interested in learning and specializing in back-end as well. I am always open to learning new technologies, as I feel very accomplished in the area.
+              I&apos;m Pedro, a web developer based in Brasilia/Brazil and specialised in front-end web development. However I am interested in learning and specializing in back-end as well. I am always open to learning new technologies, as I feel very accomplished in the area.
             </p>
             <div className='relative p-10 group'>
               <motion.img className='h-[400px] rounded-lg group-hover:contrast-75 duration-300' src='/images/Pedro-Xyrlan-foto-removebg-preview.png' />
