@@ -13,7 +13,7 @@ export default function Home() {
 
   const router = useRouter()
 
-  const wordList = ['Web Developer', 'Artist', 'Creative'];
+  const wordList = ['Artist', 'Web Developer', 'Creative'];
 
   useEffect(() => {
     const cleanup = animateWordChange(wordList);
