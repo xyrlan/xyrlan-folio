@@ -51,6 +51,13 @@ const cards = [
         href: 'https://xyrlan.github.io/news-homepage-main---challenge/',
 
     },
+        {
+        img: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/sr9i7z9p1tfb2m40pigu.jpg',
+        title: 'NFT preview card',
+        description: 'Personalized Card Component with Flexbox CSS and Hover Effects.',
+        href: 'https://nft-preview-card-xyrlan.vercel.app',
+
+    },
     {
         img: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/l0nkljeqewyxuw0vedhd.jpg',
         title: 'Advice generator app',
