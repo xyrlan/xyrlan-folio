@@ -30,7 +30,7 @@ export default function Navbar() {
                 className={`sm:hidden block max-sm:mx-4 z-50 ${!isActive ? '' : ''} `} id="menu-icon" src="/images/menu-icon.svg" />
 
             {isActive && (
-                <motion.ul initial={{ height: 0 }} whileInView={{ height: '100vh', opacity: 1 }} transition={{ duration: 1 }} className={`fixed bg-slate-100 w-full flex flex-col justify-start pt-32 items-center gap-10 z-30 top-0`}>
+                <motion.ul initial={{ height: 0 }} whileInView={{ height: '100%', opacity: 1 }} transition={{ duration: 1 }} className={`fixed bg-slate-100 w-full flex flex-col justify-start pt-32 items-center gap-10 z-30 top-0`}>
                     <motion.li initial={{  opacity: 0, y:100 }} whileInView={{  opacity: 1, y:0 }} transition={{ duration: 0.4 }}>
                         <Link href="/" 
                          onClick={() => {setActive(false)}} 
