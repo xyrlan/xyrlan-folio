@@ -30,20 +30,20 @@ export default function Navbar() {
                 className={`sm:hidden block max-sm:mx-4 z-50 ${!isActive ? '' : ''} `} id="menu-icon" src="/images/menu-icon.svg" />
 
             {isActive && (
-                <ul className="fixed bg-slate-100 h-screen w-full flex flex-col justify-center items-center gap-10 z-30">
-                    <motion.li initial={{ y: 300, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.4 }}>
+                <motion.ul initial={{ height: 0 }} whileInView={{ height: '100vh', opacity: 1 }} transition={{ duration: 1 }} className={`fixed bg-slate-100  w-full flex flex-col justify-start pt-32 items-center gap-10 z-30 `}>
+                    <motion.li initial={{  opacity: 0, y:100 }} whileInView={{  opacity: 1, y:0 }} transition={{ duration: 0.4 }}>
                         <Link href="/" 
                          onClick={() => {setActive(false)}} 
                          className="text-5xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Portfolio</Link>
                     </motion.li>
 
-                    <motion.li initial={{ y: 300, opacity: 1 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 0.5 }}>
+                    <motion.li initial={{ opacity: 0, y:100 }} whileInView={{  opacity: 1, y:0 }} transition={{ duration: 0.4, delay: 0.5 }}>
                         <Link href="/projects" 
                         onClick={() => {setActive(false)}}
                         className="text-5xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Projects</Link>
                     </motion.li>
 
-                </ul>
+                </motion.ul>
             )}
 
             <motion.ul className={`flex items-center justify-between gap-8 max-sm:hidden`}>
