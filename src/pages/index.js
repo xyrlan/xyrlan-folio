@@ -42,11 +42,11 @@ export default function Home() {
 
           <motion.div className='h-0 border border-black' initial={{ width: 0, opacity: 0 }} transition={{ duration: 2 }} animate={{ width: '40%', opacity: 1 }} />
           {wordList.map((word, index) => (
-            <motion.h1 key={index} initial={{ y: 100, opacity: 0 }} transition={{ duration: 1 }} animate={{ y: 0, opacity: 1 }} className='word top-[30%] right-0 text-8xl font-semibold max-md:text-6xl max-sm:text-5xl max-md:right-auto'>{word}</motion.h1>
+            <motion.h1 key={index} initial={{ y: 100, opacity: 0 }} transition={{ duration: 1 }} animate={{ y: 0, opacity: 1 }} className='word top-[40%] right-0 text-8xl font-semibold max-md:text-6xl max-sm:text-4xl max-md:right-auto'>{word}</motion.h1>
           ))}
         </div>
 
-        <div className='max-md:mt-3 z-50'>
+        <div className='max-md:mt-3 z-50 flex max-md:justify-center'>
           <SocialBar />
         </div>
 
