@@ -23,6 +23,13 @@ const cards = [
         href: 'https://entertainment-web-app-flame.vercel.app',
 
     },
+        {
+        img: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Screenshots/tvmugy6f5mjdfn8nmy1l.jpg',
+        title: 'App Clock',
+        description: 'Responsive page that shows the local time and gets the timezone based on the IP, using 3 API requests, and animated with FramerMotion.',
+        href: 'https://clock-app-xyrlan.vercel.app',
+
+    },
     {
         img: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/x8skdsukkmwiwxejthio.jpg',
         title: 'Space tourism multi-page website',
