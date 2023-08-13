@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 const cards = [
     {
-        img: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_900/Challenges/jghr4d3xvrzycrpuj1so.jpg',
+        img: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/hg4pjudclbtzgb8xmsy9.jpg',
         title: 'Devlinks app',
         description: 'Full Stack aplication app using Nextjs(app router) + Prisma + NextAuth + PostgreSQL',
         href: 'https://link-sharing-app-ten.vercel.app',
