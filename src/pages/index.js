@@ -13,7 +13,7 @@ export default function Home() {
 
   const router = useRouter()
 
-  const wordList = ['Artist', 'Web Developer', 'Creative'];
+  const wordList = ['Developer', 'Full-Stack', 'Creative'];
 
   useEffect(() => {
     const cleanup = animateWordChange(wordList);
@@ -62,7 +62,7 @@ export default function Home() {
         <div className='max-md:pb-10'>
           <motion.div initial={{ opacity: 0 }} transition={{ duration: 2 }} whileInView={{ opacity: 1 }} className='flex max-md:flex-col max-md:mt-10 items-center justify-between'>
             <p className='w-[50%] max-md:w-full text-xl font text-center'>
-              I&apos;m Pedro, a web developer based in Brasilia/Brazil and specialised in front-end web development. However I am interested in learning and specializing in back-end as well. I am always open to learning new technologies, as I feel very accomplished in the area.
+              Hello, I&apos;m Pedro, a seasoned full-stack developer with a strong command of both front-end and back-end technologies. My journey in the tech world is fueled by an insatiable desire to learn and stay ahead of the curve.
             </p>
             <div className='relative p-10 group'>
               <motion.img className='h-[400px] max-md:h-[300px] rounded-lg group-hover:contrast-75 duration-300' src='/images/Pedro-Xyrlan-foto-removebg-preview.png' />
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
 
             <p className='w-[50%] max-md:w-full text-xl font text-center'>
-              I am experienced in using a wide range of modern technologies, including React JS, CSS, Tailwind CSS, HTML, Framer Motion, Node.js, TS and Git to build astonishing websites that look great in all devices.
+            I bring expertise in TypeScript/JavaScript, along with skills in TailwindCss, React and NextJS for creating engaging and visually appealing user interfaces. On the back-end, I leverage Node.js, combining it with Postgresql for reliable database management and Prisma for efficient data handling.
             </p>
           </motion.div>
 

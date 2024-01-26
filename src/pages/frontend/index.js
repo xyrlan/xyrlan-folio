@@ -43,7 +43,7 @@ export default function Projects() {
                         Projects with multiple pages, single page<br /> applications, landing pages and more</p>
 
                     <button
-                        onClick={() => router.push('/pages')}
+                        onClick={() => router.push('/frontend/projects')}
                         className='text-xl font-semibold border-l-2 border-black group'
                     >
                         <div className=" group-hover:text-slate-100 relative py-1 px-2">
