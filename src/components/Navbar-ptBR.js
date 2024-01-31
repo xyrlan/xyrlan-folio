@@ -5,7 +5,7 @@ import { motion, animate, stagger } from "framer-motion"
 import Link from "next/link"
 import { XIcon } from "lucide-react";
 
-export default function Navbar({ setLanguage }) {
+export default function NavbarptBR({ setLanguage }) {
 
     useEffect(() => {
         if (typeof document !== 'undefined') {
@@ -39,48 +39,42 @@ export default function Navbar({ setLanguage }) {
                 {isActive && (
                     <motion.ul initial={{ height: 0 }} whileInView={{ height: '100%', opacity: 1 }} transition={{ duration: 1 }} className={`fixed bg-slate-100 w-full flex flex-col justify-start pt-32 items-center gap-10 z-30 top-0`}>
                         <motion.li initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-                            <Link href="/"
-                                onClick={() => { setActive(false) }}
-                                className="text-5xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Home</Link>
+                            <Link href="/ptBR" onClick={() => { setActive(false) }} className="text-5xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Início</Link>
                         </motion.li>
 
                         <motion.li initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.5 }}>
-                            <Link href="/fullstack"
-                                onClick={() => { setActive(false) }}
-                                className="text-5xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Full-stack</Link>
+                            <Link href="/ptBR/fullstack" onClick={() => { setActive(false) }} className="text-5xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Full-stack</Link>
                         </motion.li>
+
                         <motion.li initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.6 }}>
-                            <Link href="/frontend"
-                                onClick={() => { setActive(false) }}
-                                className="text-5xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Front-end</Link>
+                            <Link href="/ptBR/frontend" onClick={() => { setActive(false) }} className="text-5xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Front-end</Link>
                         </motion.li>
+
                         <motion.li initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.7 }} className="mt-auto mb-5">
-                            <button className='flex items-center gap-2 text-xl font-bold cursor-pointer hover:border-b-4 text-gray-600 hover:border-black duration-200 group transition-all' onClick={() => setLanguage('ptbr')}>
-                                <Image height={30} width={30} src={'/images/estados-unidos.png'} alt='bandeirabrasil' />
-                                <span className="transition-all group-hover:visible whitespace-nowrap">Trocar idioma</span>
+                            <button className='flex items-center gap-2 text-xl font-bold cursor-pointer hover:border-b-4 text-gray-600 hover:border-black duration-200 group transition-all' onClick={() => setLanguage('en')}>
+                                <Image height={30} width={30} src={'/images/brasil.png'} alt='bandeirabrasil' />
+                                <span className="transition-all group-hover:visible whitespace-nowrap">Change language</span>
                             </button>
                         </motion.li>
                     </motion.ul>
                 )}
 
                 <motion.ul className={`flex items-center justify-between gap-8 max-sm:hidden`}>
-
                     <motion.li initial={{ y: 300, opacity: 0 }} transition={{ duration: 0.2 }}>
-                        <Link href="/" className="text-xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Home</Link>
+                        <Link href="/ptBR" className="text-xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Início</Link>
                     </motion.li>
 
                     <motion.li initial={{ y: 300, opacity: 0 }} transition={{ duration: 0.2 }}>
-                        <Link href="/fullstack" className="text-xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Full-stack</Link>
+                        <Link href="/ptBR/fullstack" className="text-xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Full-stack</Link>
                     </motion.li>
                     <motion.li initial={{ y: 300, opacity: 0 }} transition={{ duration: 0.2 }}>
-                        <Link href="/frontend" className="text-xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Front-end</Link>
+                        <Link href="/ptBR/frontend" className="text-xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200">Front-end</Link>
                     </motion.li>
                     <motion.li initial={{ y: 300, opacity: 0 }} transition={{ duration: 0.2 }}>
-                        <button className='flex items-center gap-2 text-xl font-bold cursor-pointer hover:border-b-4 hover:text- hover:border-black duration-200 group transition-all' onClick={() => setLanguage('ptbr')}><Image height={30} width={30} src={'/images/estados-unidos.png'} alt='bandeirabrasil' />
-                            <span className="invisible absolute -z-10 translate-x-7 group-hover:translate-x-10 transition-all group-hover:visible whitespace-nowrap">Trocar idioma</span>
+                        <button className='flex items-center gap-2 text-xl font-bold cursor-pointer hover:border-b-4 text-gray-500 hover:border-black duration-200 group transition-all' onClick={() => setLanguage('en')}><Image height={30} width={30} src={'/images/brasil.png'} alt='bandeirabrasil' />
+                            <span className="invisible absolute -z-10 translate-x-7 group-hover:translate-x-10 transition-all group-hover:visible whitespace-nowrap">Change language</span>
                         </button>
                     </motion.li>
-
                 </motion.ul>
             </div>
         </nav>

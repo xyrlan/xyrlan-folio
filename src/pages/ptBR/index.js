@@ -13,7 +13,7 @@ export default function Home() {
 
   const router = useRouter()
 
-  const wordList = ['Developer', 'Full-Stack', 'Creative'];
+  const wordList = ['Desenvolvedor', 'Full-Stack', 'Criativo'];
 
   useEffect(() => {
     const cleanup = animateWordChange(wordList);
@@ -55,23 +55,23 @@ export default function Home() {
       <section className='relative'>
         <motion.img initial={{ opacity: 0 }} transition={{ duration: 2 }} animate={{ opacity: 0.1 }} className='absolute -top-80 left-[30%] -rotate-45  scale-150 z-0 overflow-hidden select-none' src='/images/bg-hero1-removebg-preview.png' />
         <div>
-          <h1 className='text-7xl font-bold '>About</h1>
+          <h1 className='text-7xl font-bold '>Sobre</h1>
           <motion.div className='h-0 border border-black mt-5' initial={{ width: 0, opacity: 0 }} transition={{ duration: 2 }} whileInView={{ width: '100%', opacity: 1 }} />
         </div>
 
-        <div className='pb-10'>
+        <div className='max-md:pb-10'>
           <motion.div initial={{ opacity: 0 }} transition={{ duration: 2 }} whileInView={{ opacity: 1 }} className='flex max-md:flex-col max-md:mt-10 items-center justify-between'>
             <p className='w-[50%] max-md:w-full text-xl font text-center'>
-              Hello, I&apos;m Pedro, a seasoned full-stack developer with a strong command of both front-end and back-end technologies. My journey in the tech world is fueled by an insatiable desire to learn and stay ahead of the curve.
+              Olá, sou Pedro, um desenvolvedor full-stack experiente com um forte domínio de tecnologias front-end e back-end. Minha jornada no mundo da tecnologia é alimentada por um desejo insaciável de aprender e estar à frente da curva.
             </p>
-            <div className='relative p-10 mb-10 group'>
+            <div className='relative p-10 group'>
               <motion.img className='h-[400px] max-md:h-[300px] rounded-lg group-hover:contrast-75 duration-300' src='/images/Pedro-Xyrlan-foto-removebg-preview.png' />
               <motion.div className='absolute w-full h-full top-0 left-0 duration-700 to-slate-100 from-transparent bg-gradient-radial to-55% ' />
             </div>
           </motion.div>
 
 
-          <motion.div initial={{ opacity: 0 }} transition={{ duration: 2 }} whileInView={{ opacity: 1 }} className='flex max-md:flex-col items-center justify-between max-md:gap-10'>
+          <motion.div initial={{ opacity: 0 }} transition={{ duration: 2 }} whileInView={{ opacity: 1 }} className='flex max-md:flex-col items-center justify-between max-md:gap-5'>
 
             <div className='flex max-md:flex-col justify-center items-center gap-4 max-md:gap-10 w-[50%] '>
               <div className='gap-4 flex md:flex-col'>
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
 
             <p className='w-[50%] max-md:w-full text-xl font text-center'>
-            I bring expertise in TypeScript/JavaScript, along with skills in TailwindCss, React and NextJS for creating engaging and visually appealing user interfaces. On the back-end, I leverage Node.js, combining it with Postgresql for reliable database management and Prisma for efficient data handling.
+              Tenho experiência em TypeScript/JavaScript, juntamente com habilidades em TailwindCss, React e NextJS para criar interfaces de usuário envolventes e visualmente atraentes. No back-end, utilizo o Node.js, combinando-o com Postgresql para gerenciamento confiável de banco de dados e Prisma para manipulação eficiente de dados.
             </p>
           </motion.div>
 
