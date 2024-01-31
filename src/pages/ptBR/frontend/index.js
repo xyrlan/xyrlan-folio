@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { motion } from "framer-motion"
 import { useRouter } from 'next/router'
 import SocialBar from '@/components/social-bar'
+import Link from 'next/link'
 
 
 export default function Projects() {
@@ -42,7 +43,7 @@ export default function Projects() {
                     <p className='font-extralight mb-[4%]'>
                         Projetos com múltiplas páginas, página única<br /> aplicaçóes, componentes, landing pages e mais</p>
 
-                    <a
+                    <Link
                         href='/ptBR/frontend/projects'
 
                     >
@@ -52,7 +53,7 @@ export default function Projects() {
                                 <div className='group-hover:bg-black absolute left-0 top-0 h-full w-0 group-hover:w-full transition-all duration-300 z-0' />
                             </div>
                         </button>
-                    </a>
+                    </Link>
 
                 </motion.div>
 
