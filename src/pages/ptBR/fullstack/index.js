@@ -13,6 +13,12 @@ const cards = [
     description: 'Projeto pessoal com fins lucrativos. Aplicação Full Stack utilizando Nextjs, Prisma, NextAuth, Supabase.',
     href: 'https://www.meunu.com.br/',
   },
+  {
+    img: '/images/nihonproject.png',
+    title: 'Nihon restaurante',
+    description: 'Aplicação Full Stack utilizando Nextjs integrada com Sanity e emailJS, feita para um cliente.',
+    href: 'https://www.nihonrestaurante.com.br',
+  },
 ]
 
 export default function FullStackProjects() {
