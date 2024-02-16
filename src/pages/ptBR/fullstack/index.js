@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const cards = [
   {
@@ -31,7 +32,8 @@ export default function FullStackProjects() {
       <motion.div initial={{ y: 100, opacity: 0 }} transition={{ duration: 1 }} animate={{ y: 0, opacity: 1 }} className="grid xl:grid-cols-5  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1 gap-10 p-2 pb-14 mt-10">
         {cards.map((card, index) => (
           <div key={index} className=" group/image overflow-hidden border rounded flex flex-col justify-between shadow-md">
-            <img className="group-hover/image:scale-110 duration-200 " src={card.img} />
+            <Image width={300} height={300} className="group-hover/image:scale-110 duration-200 w-full h-56 object-cover" src={card.img} alt="" />
+
 
             <div className="p-4">
               <h1 className="mb-5 font-bold text-xl">{card.title}</h1>
