@@ -20,6 +20,12 @@ const cards = [
     description: 'Aplicação Full Stack utilizando Nextjs integrada com Sanity e emailJS, feita para um cliente.',
     href: 'https://www.nihonrestaurante.com.br',
   },
+  {
+    img: '/images/pesqueiro110folio.png',
+    title: 'Pesqueiro 110',
+    description: 'Aplicação Full Stack utilizando Nextjs integrada com Sanity, feita para um cliente.',
+    href: 'https://www.pesqueiro110.com.br/',
+  }
 ]
 
 export default function FullStackProjects() {

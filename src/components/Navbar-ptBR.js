@@ -28,7 +28,10 @@ export default function NavbarptBR({ setLanguage }) {
                     onClick={() => {
                         setActive(isActive ? false : true);
                     }}
-                    className={`sm:hidden block max-sm:mx-4 z-50 duration-200 transition-all ${!isActive ? 'opacity-100' : 'opacity-0 translate-x-14 right-0 top-4 absolute'} `} id="menu-icon" src="/images/menu-icon.svg" />
+                    className={`sm:hidden block max-sm:mx-4 z-50 duration-200 transition-all ${!isActive ? 'opacity-100' : 'opacity-0 translate-x-14 right-0 top-4 absolute'} `}
+                    id="menu-icon"
+                    src="/images/menu-icon.svg"
+                />
 
                 <XIcon
                     onClick={() => {

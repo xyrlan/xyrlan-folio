@@ -10,11 +10,11 @@ export default function App({ Component, pageProps }) {
 
   const [showScrollButton, setShowScrollButton] = useState(false);
   const [language, setLanguage] = useState()
-  console.log(language)
+
   const router = useRouter()
 
   const pathname = router.pathname
-  console.log(pathname)
+
 
   useEffect(() => {
     const langPath = language === 'ptbr' ? '/ptBR' : '';

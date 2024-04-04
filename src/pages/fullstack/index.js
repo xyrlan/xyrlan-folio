@@ -20,6 +20,12 @@ const cards = [
     description: 'Full Stack application for and customer using Nextjs integrated with Sanity and EmailJS',
     href: 'https://www.nihonrestaurante.com.br',
   },
+  {
+    img: '/images/pesqueiro110folio.png',
+    title: 'Pesqueiro 110',
+    description: 'Full Stack application using Nextjs integrated with Sanity, made for a client.',
+    href: 'https://www.pesqueiro110.com.br/',
+  }
 ]
 
 export default function FullStackProjects() {
