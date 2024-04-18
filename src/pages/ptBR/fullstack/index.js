@@ -3,6 +3,12 @@ import Image from "next/image"
 
 const cards = [
   {
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/hg4pjudclbtzgb8xmsy9.jpg',
+    title: 'Aplicativo Devlinks, replicação do Linktree',
+    description: 'Aplicação Full Stack usando Nextjs (app router) + Prisma + NextAuth + PostgreSQL',
+    href: 'https://link-sharing-app-ten.vercel.app',
+  },
+  {
     img: '/images/siteguine.png',
     title: 'Site/Blog Institucional - CECCIC',
     description: 'Aplicação Full Stack utilizando Nextjs integrada com Sanity, feita para um instituto na Guiné-Bissau.',
@@ -25,9 +31,15 @@ const cards = [
     title: 'Pesqueiro 110',
     description: 'Aplicação Full Stack utilizando Nextjs integrada com Sanity, feita para um cliente.',
     href: 'https://www.pesqueiro110.com.br/',
+  },
+  {
+    img: '/images/mosaicoproject.png',
+    title: 'Mosaico Genética Médica',
+    description: 'Aplicação Front End utilizando Nextjs e Framer Motion, feita para um cliente.',
+    href: 'https://www.mosaico.med.br/'
   }
 ]
-
+const cardsReversed = cards.reverse()
 export default function FullStackProjects() {
   return (
     <main className="px-20 max-lg:px-4">
@@ -36,7 +48,7 @@ export default function FullStackProjects() {
       </div>
       <motion.div className='h-0 border border-black' initial={{ width: 0, opacity: 0 }} transition={{ duration: 2 }} animate={{ width: '100%', opacity: 1 }} />
       <motion.div initial={{ y: 100, opacity: 0 }} transition={{ duration: 1 }} animate={{ y: 0, opacity: 1 }} className="grid xl:grid-cols-5  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1 gap-10 p-2 pb-14 mt-10">
-        {cards.map((card, index) => (
+        {cardsReversed.map((card, index) => (
           <div key={index} className=" group/image overflow-hidden border rounded flex flex-col justify-between shadow-md">
             <Image width={300} height={300} className="group-hover/image:scale-110 duration-200 w-full h-56 object-cover" src={card.img} alt="" />
 

@@ -1,12 +1,7 @@
 import { motion } from "framer-motion"
 
 const cards = [
-    {
-        img: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/hg4pjudclbtzgb8xmsy9.jpg',
-        title: 'Aplicativo Devlinks, replicação do Linktree',
-        description: 'Aplicação Full Stack usando Nextjs (app router) + Prisma + NextAuth + PostgreSQL',
-        href: 'https://link-sharing-app-ten.vercel.app',
-    },
+
     {
         img: '/images/poke-next-print.PNG',
         title: 'Página PokeDex usando API Pokémon',
