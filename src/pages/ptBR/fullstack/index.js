@@ -37,6 +37,12 @@ const cards = [
     title: 'Mosaico Genética Médica',
     description: 'Aplicação Front End utilizando Nextjs e Framer Motion, feita para um cliente.',
     href: 'https://www.mosaico.med.br/'
+  },
+  {
+    img: '/images/srv.png',
+    title: 'SRV Empreendimentos',
+    description : 'Aplicação Front End utilizando Nextjs 14, TailwindCSS e Framer Motion, feita para um cliente.',
+    href: 'https://www.srvempreendimentos.com.br/'
   }
 ]
 const cardsReversed = cards.reverse()
