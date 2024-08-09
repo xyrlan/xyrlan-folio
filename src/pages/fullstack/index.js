@@ -43,7 +43,12 @@ const cards = [
     title: 'SRV Empreendimentos',
     description : 'Front End application using Nextjs 14, TailwindCSS and Framer Motion, made for a customer.',
     href: 'https://www.srvempreendimentos.com.br/'
-  
+  },
+  {
+    img: '/images/hookzpage.png',
+    title: 'HookZ Dashboard',
+    description: 'A complex dashboard built with NextJS, React, and TailwindCSS.',
+    href: 'https://hookz-demo.vercel.app/',
   }
 ]
 const cardsReversed = cards.reverse()

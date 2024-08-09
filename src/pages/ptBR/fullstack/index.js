@@ -43,7 +43,13 @@ const cards = [
     title: 'SRV Empreendimentos',
     description : 'Aplicação Front End utilizando Nextjs 14, TailwindCSS e Framer Motion, feita para um cliente.',
     href: 'https://www.srvempreendimentos.com.br/'
-  }
+  },
+  {
+    img: '/images/hookzpage.png',
+    title: 'HookZ Dashboard',
+    description: 'Um dashboard complexo construído com NextJS, React e TailwindCSS.',
+    href: 'https://hookz-demo.vercel.app/',
+  },
 ]
 const cardsReversed = cards.reverse()
 export default function FullStackProjects() {
