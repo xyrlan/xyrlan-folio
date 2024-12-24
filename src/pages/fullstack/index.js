@@ -54,7 +54,7 @@ const cards = [
     img: '/images/srvfoods.png',
     title: 'Hisa Distribuidora',
     description: 'Full Stack application using Nextjs, Sanity, TailwindCSS and Framer Motion, made for a customer.',
-    href: 'https://hookz-demo.vercel.app/',
+    href: 'https://www.comprecomhisa.com.br/',
   }
 ]
 const cardsReversed = cards.reverse()
