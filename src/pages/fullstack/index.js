@@ -55,6 +55,12 @@ const cards = [
     title: 'Hisa Distribuidora',
     description: 'Full Stack application using Nextjs, Sanity, TailwindCSS and Framer Motion, made for a customer.',
     href: 'https://www.comprecomhisa.com.br/',
+  },
+  {
+    img: '/images/oab.png',
+    title: 'OAB para todos',
+    description: "A website made for the OAB DF, the largest lawyers' organization in Brazil, with complex and lightweight animations at the same time.",
+    href: 'https://www.oabdfparatodos.com.br/'
   }
 ]
 const cardsReversed = cards.reverse()
