@@ -57,6 +57,12 @@ const cards = [
     href: 'https://www.comprecomhisa.com.br/',
   },
   {
+        img: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Screenshots/qhex5aspdyg8u5j1yklg.jpg',
+        title: 'Entertainment Page with TMDB API',
+        description: 'This multi-page entertainment web application utilizes, Consume complex API requisition, dynamic routing, state management and search functionality integrated with backend.',
+        href: 'https://entertainment-web-app-git-tmdb-movies-xyrlan.vercel.app',
+  },
+  {
     img: '/images/oab.png',
     title: 'OAB para todos',
     description: "A website made for the OAB DF, the largest lawyers' organization in Brazil, with complex and lightweight animations at the same time.",
