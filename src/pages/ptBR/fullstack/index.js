@@ -57,6 +57,12 @@ const cards = [
     href: 'https://www.comprecomhisa.com.br/',
   },
   {
+    "img": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Screenshots/qhex5aspdyg8u5j1yklg.jpg",
+    "title": "Página de Entretenimento com API TMDB",
+    "description": "Este aplicativo web de entretenimento multi-página utiliza requisições complexas à API, roteamento dinâmico, gerenciamento de estado e funcionalidade de busca integrada ao backend.",
+    "href": "https://entertainment-web-app-git-tmdb-movies-xyrlan.vercel.app"
+},
+  {
     img: '/images/oab.png',
     title: 'OAB para todos',
     description: "Um site feito para a OAB DF, a maior organização de advogados do Brasil, com animações complexas e leves ao mesmo tempo.",
